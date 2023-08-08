@@ -1,0 +1,14 @@
+import pyautogui as p
+import time
+time.sleep(3)
+time.sleep(1)
+dist=500
+while dist > 0:
+    p.dragRel(dist,0,1,button='left')
+    dist = dist - 25
+    p.dragRel(0,dist,1,button='left')
+    p.dragRel(-dist,0,1,button='left')
+    dist = dist - 25
+    p.dragRel(0,-dist,1,button='left')
+    
+    
