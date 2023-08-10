@@ -1,0 +1,32 @@
+import pyautogui as p
+import time
+
+x=int(input('''1)Opera\n2)Spotify\n3)Valorant\n4)Settings\nEnter Choice:'''))
+time.sleep(3)
+if x==1:
+    text=input("Enter text to search:")
+    p.click(208,1056,1,2,button='left')
+    p.click(692,55,2,2,button='left')
+    p.write(text)
+    p.hotkey('Enter')
+elif x==2:
+    song=input('Enter Song to search and play:')
+    p.moveTo(29,1056,3)
+    p.click(29,1056,1,2,button='left')
+    p.write('spotify')
+    p.hotkey('Enter')
+    time.sleep(2)
+    p.moveTo(223,205)
+    p.click(223,205,2,1,button='left')
+    time.sleep(1)
+    p.moveTo(870,155)
+    p.click(870,155,2,1,button='left')
+    p.write(song)
+    p.hotkey('Enter')
+    time.sleep(1)
+    p.moveTo(914,504)
+    p.click(914,504,1,1,button='left')
+    
+    
+    
+
